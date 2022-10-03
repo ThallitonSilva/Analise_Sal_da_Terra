@@ -46,7 +46,7 @@ gliricidia = col_a.file_uploader('Insira o arquivo de Gliricidia', accept_multip
 beldroega = col_b.file_uploader('Insira o arquivo de Beldroega', accept_multiple_files=False)
 #------------------------------------------
 
-keyword = st.text_input('Qual palavra procurar nas definições?', '')
+keyword = st.text_input('Qual palavra procurar nas definições?', 'heat')
 
 col1, col2 = st.columns(2)
 # --- Coluna 1 - Gliricidia
@@ -65,7 +65,7 @@ with col1:
 
         st.download_button(label=f'Download {keyword} Genes em Gliricidia',
                            data=excel_gliri,
-                           file_name=f'Download_{keyword}_Genes.xlsx',
+                           file_name=f'Glirricidia_sepium_Download_{keyword}_Genes.xlsx',
                            mime="application/vnd.ms-excel")
 
 # --- Coluna 2 - Beldroega
@@ -84,5 +84,5 @@ with col2:
 
         st.download_button(label=f'Download {keyword} Genes em Beldroega',
                            data=excel_beld,
-                           file_name=f'Download_{keyword}_Genes.xlsx',
+                           file_name=f'Portulaca_oleraceae_Download_{keyword}_Genes.xlsx',
                            mime="application/vnd.ms-excel")
