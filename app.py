@@ -65,7 +65,7 @@ with col1:
 
         st.download_button(label=f'Download {keyword} Genes em Gliricidia',
                            data=excel_gliri,
-                           file_name=f'Glirricidia_sepium_Download_{keyword}_Genes.xlsx',
+                           file_name=f'Gliricidia_sepium_Download_{keyword}_Genes.xlsx',
                            mime="application/vnd.ms-excel")
 
 # --- Coluna 2 - Beldroega
